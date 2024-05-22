@@ -1,11 +1,22 @@
 var Sequelize = require('sequelize');
 
-const sequelize = new Sequelize(
+/*const sequelize = new Sequelize(
     'postgres', //usei a base de dados default do postgres e criei as tabelas Movies e Genres
     'postgres',
     'postgres',
     {
         host: 'localhost',
+        port: 5432,
+        dialect: 'postgres'
+    }
+);*/
+
+const sequelize = new Sequelize(
+    'basedados_hqdr', //usei a base de dados default do postgres e criei as tabelas Movies e Genres
+    'basedados_hqdr_user',
+    'arZpSxn7J1R3FdyBTc0Br37i9CeH8lZv',
+    {
+        host: 'postgres://basedados_hqdr_user:arZpSxn7J1R3FdyBTc0Br37i9CeH8lZv@dpg-cp75k70l6cac7387enr0-a/basedados_hqdr',
         port: 5432,
         dialect: 'postgres'
     }
